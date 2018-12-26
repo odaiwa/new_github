@@ -113,7 +113,7 @@ Persist Security Info=False;";
                 }
                 if (count == 1)
                 {
-                   Hide();
+                    Hide();
                     lec.Show();
                 }
                 if (count > 1)
@@ -154,19 +154,32 @@ Persist Security Info=False;";
         private void manzone_Click(object sender, EventArgs e)
         {
             ManagerZone mann = new ManagerZone();
+            this.Hide();
             mann.Show();
         }
 
         private void leczone_Click(object sender, EventArgs e)
         {
             LecturerZone lecc = new LecturerZone();
+            this.Hide();
             lecc.Show();
         }
 
         private void stuzone_Click(object sender, EventArgs e)
         {
             StudentZone stdz = new StudentZone();
+            this.Hide();
             stdz.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

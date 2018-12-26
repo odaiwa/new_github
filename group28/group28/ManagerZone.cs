@@ -12,6 +12,7 @@ namespace group28
 {
     public partial class ManagerZone : Form
     {
+        public Form1 asd3 = new Form1();
         public ManagerZone()
         {
             InitializeComponent();
@@ -71,6 +72,12 @@ namespace group28
         {
             View_Messages vm = new View_Messages();
             vm.Show();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            asd3.Show();
         }
     }
 }

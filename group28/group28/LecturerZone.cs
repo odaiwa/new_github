@@ -12,6 +12,7 @@ namespace group28
 {
     public partial class LecturerZone : Form
     {
+        public Form1 asd3 = new Form1();
         public LecturerZone()
         {
             InitializeComponent();
@@ -20,6 +21,12 @@ namespace group28
         private void LecturerZone_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            asd3.Show();
         }
     }
 }

@@ -48,5 +48,15 @@ namespace group28
                 lecturerDataGridView.DataSource = dv;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void lecturerDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

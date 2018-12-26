@@ -69,6 +69,12 @@
     <Compile Include="delete_course.Designer.cs">
       <DependentUpon>delete_course.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmailUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmailUpdate.Designer.cs">
+      <DependentUpon>EmailUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="delete_course.resx">
       <DependentUpon>delete_course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailUpdate.resx">
+      <DependentUpon>EmailUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

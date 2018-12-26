@@ -37,7 +37,7 @@ namespace group28
             string id = string.Format(textB_id.Text);
 
             if (id == "") {
-                MessageBox.Show("You Must Insert an id Student!");
+                MessageBox.Show("You Must Insert a Student ID !");
             }
             else
             {
