@@ -30,6 +30,7 @@ Persist Security Info=False;";
         public static class LoginInfo
         {
             public static string userid;
+            public static string user;
         }
         private void Login_button_Click(object sender, EventArgs e)
         {
@@ -38,7 +39,7 @@ Persist Security Info=False;";
             LecturerZone lec = new LecturerZone();
             string user = string.Format(username_text.Text);
             string pass = string.Format(password_text.Text);
-            //string iduser;
+            LoginInfo.user = user;
             if (user == "" || pass == "") {
                 MessageBox.Show("you must enter username and pass to login");
             }
@@ -147,10 +148,7 @@ Persist Security Info=False;";
                 MessageBox.Show("Error" + ex);
             }
         }
-        //public static class LoginInfo
-        //{
-        //    public static string userid;
-        //}
+
         private void manzone_Click(object sender, EventArgs e)
         {
             ManagerZone mann = new ManagerZone();

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search_course));
             this.label1 = new System.Windows.Forms.Label();
             this.textB_id_crs = new System.Windows.Forms.TextBox();
             this.btn_search_crs = new System.Windows.Forms.Button();
@@ -45,16 +46,18 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label_title = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.database23DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Text", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(272, 99);
+            this.label1.Location = new System.Drawing.Point(220, 99);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 29);
             this.label1.TabIndex = 16;
@@ -62,7 +65,7 @@
             // 
             // textB_id_crs
             // 
-            this.textB_id_crs.Location = new System.Drawing.Point(377, 105);
+            this.textB_id_crs.Location = new System.Drawing.Point(325, 105);
             this.textB_id_crs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textB_id_crs.Name = "textB_id_crs";
             this.textB_id_crs.Size = new System.Drawing.Size(191, 22);
@@ -70,13 +73,16 @@
             // 
             // btn_search_crs
             // 
-            this.btn_search_crs.Location = new System.Drawing.Point(573, 99);
+            this.btn_search_crs.BackColor = System.Drawing.Color.White;
+            this.btn_search_crs.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_search_crs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_search_crs.Location = new System.Drawing.Point(521, 99);
             this.btn_search_crs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_search_crs.Name = "btn_search_crs";
             this.btn_search_crs.Size = new System.Drawing.Size(107, 34);
             this.btn_search_crs.TabIndex = 14;
             this.btn_search_crs.Text = "Search";
-            this.btn_search_crs.UseVisualStyleBackColor = true;
+            this.btn_search_crs.UseVisualStyleBackColor = false;
             this.btn_search_crs.Click += new System.EventHandler(this.btn_search_crs_Click);
             // 
             // database23DataSet
@@ -120,7 +126,7 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
             this.courseDataGridView.DataSource = this.courseBindingSource;
-            this.courseDataGridView.Location = new System.Drawing.Point(103, 163);
+            this.courseDataGridView.Location = new System.Drawing.Point(51, 163);
             this.courseDataGridView.Name = "courseDataGridView";
             this.courseDataGridView.RowTemplate.Height = 24;
             this.courseDataGridView.Size = new System.Drawing.Size(744, 319);
@@ -174,17 +180,30 @@
             this.label_title.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.label_title.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_title.ForeColor = System.Drawing.Color.Green;
-            this.label_title.Location = new System.Drawing.Point(344, 9);
+            this.label_title.Location = new System.Drawing.Point(292, 9);
             this.label_title.Name = "label_title";
             this.label_title.Size = new System.Drawing.Size(280, 54);
             this.label_title.TabIndex = 20;
             this.label_title.Text = "Search Course";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Search_course
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(996, 494);
+            this.BackColor = System.Drawing.Color.Beige;
+            this.ClientSize = new System.Drawing.Size(882, 494);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label_title);
             this.Controls.Add(this.courseDataGridView);
             this.Controls.Add(this.label1);
@@ -196,6 +215,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.database23DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,5 +239,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.Label label_title;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

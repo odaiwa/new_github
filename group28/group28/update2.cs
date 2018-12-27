@@ -52,5 +52,12 @@ namespace group28
             this.tableAdapterManager.UpdateAll(this.database23DataSet);
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            ManagerZone mn = new ManagerZone();
+            mn.Show();
+        }
     }
 }

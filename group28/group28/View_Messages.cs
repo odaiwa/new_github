@@ -36,5 +36,30 @@ Persist Security Info=False;";
             sda.Fill(dt);
             dataGridView1.DataSource = dt;
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            ManagerZone man = new ManagerZone();
+            StudentZone stu = new StudentZone();
+            LecturerZone lec = new LecturerZone();
+            this.Hide();
+            string usera = LoginInfo.user;
+            if (usera[0] == 's')
+            {
+                stu.Show();
+            }
+            if (usera[0] == 'l')
+            {
+                lec.Show();
+            }
+            if (usera[0] == 'm')
+            {
+                man.Show();
+            }
+        }
     }
 }

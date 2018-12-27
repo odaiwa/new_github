@@ -64,5 +64,12 @@ namespace group28
                 MessageBox.Show("The Course Already Exist!");
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            ManagerZone mm = new ManagerZone();
+            mm.Show();
+        }
     }
 }

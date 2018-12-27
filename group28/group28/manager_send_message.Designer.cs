@@ -32,11 +32,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.richTextB_text = new System.Windows.Forms.RichTextBox();
-            this.textB_byid = new System.Windows.Forms.TextBox();
+            this.textB_toid = new System.Windows.Forms.TextBox();
             this.btn_send = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label_title = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -45,7 +47,7 @@
             this.label8.Font = new System.Drawing.Font("Sitka Text", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(69, 152);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 33);
+            this.label8.Size = new System.Drawing.Size(75, 35);
             this.label8.TabIndex = 20;
             this.label8.Text = "Text:";
             // 
@@ -68,12 +70,12 @@
             this.richTextB_text.TabIndex = 24;
             this.richTextB_text.Text = "";
             // 
-            // textB_byid
+            // textB_toid
             // 
-            this.textB_byid.Location = new System.Drawing.Point(172, 105);
-            this.textB_byid.Name = "textB_byid";
-            this.textB_byid.Size = new System.Drawing.Size(202, 22);
-            this.textB_byid.TabIndex = 25;
+            this.textB_toid.Location = new System.Drawing.Point(172, 105);
+            this.textB_toid.Name = "textB_toid";
+            this.textB_toid.Size = new System.Drawing.Size(202, 22);
+            this.textB_toid.TabIndex = 25;
             // 
             // btn_send
             // 
@@ -95,7 +97,7 @@
             this.groupBox1.Controls.Add(this.richTextB_text);
             this.groupBox1.Controls.Add(this.btn_send);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textB_byid);
+            this.groupBox1.Controls.Add(this.textB_toid);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(111, 179);
             this.groupBox1.Name = "groupBox1";
@@ -116,6 +118,17 @@
             this.label_title.TabIndex = 28;
             this.label_title.Text = "Send Message";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(82, 43);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // manager_send_message
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -124,12 +137,14 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(775, 540);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Name = "manager_send_message";
             this.Text = "send_message";
             this.Load += new System.EventHandler(this.manager_send_message_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -139,9 +154,10 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox richTextB_text;
-        private System.Windows.Forms.TextBox textB_byid;
+        private System.Windows.Forms.TextBox textB_toid;
         private System.Windows.Forms.Button btn_send;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label_title;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

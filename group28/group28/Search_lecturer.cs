@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static group28.Form1;
 
 namespace group28
 {
@@ -51,12 +52,49 @@ namespace group28
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ManagerZone man = new ManagerZone();
+            StudentZone stu = new StudentZone();
+            LecturerZone lec = new LecturerZone();
             this.Hide();
+            string usera = LoginInfo.user;
+            if(usera[0] == 's')
+            {
+                stu.Show();
+            }
+            if (usera[0] == 'l')
+            {
+                lec.Show();
+            }
+            if (usera[0] == 'm')
+            {
+                man.Show();
+            }
         }
 
         private void lecturerDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            ManagerZone man = new ManagerZone();
+            StudentZone stu = new StudentZone();
+            LecturerZone lec = new LecturerZone();
+            this.Hide();
+            string usera = LoginInfo.user;
+            if (usera[0] == 's')
+            {
+                stu.Show();
+            }
+            if (usera[0] == 'l')
+            {
+                lec.Show();
+            }
+            if (usera[0] == 'm')
+            {
+                man.Show();
+            }
         }
     }
 }

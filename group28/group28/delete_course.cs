@@ -50,18 +50,11 @@ Persist Security Info=False;";
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                connection.Open();
-                label1.Text = "connected";
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error" + ex);
-            }
+            Hide();
+            ManagerZone mm = new ManagerZone();
+            mm.Show();
         }
     }
 }

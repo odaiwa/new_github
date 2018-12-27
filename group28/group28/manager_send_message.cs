@@ -27,8 +27,8 @@ Persist Security Info=False;";
             try
             {
                 connection.Open();
-                string byid = LoginInfo.userid; ;
                 string toid = textB_toid.Text.ToString();
+                string byid = LoginInfo.userid;
                 string text = richTextB_text.Text.ToString();
                 string query = "INSERT into messages([sender_id],[reciever_id],[Text])VALUES('" + byid + "','" + toid + "','" + text + "')";
                 OleDbCommand command = new OleDbCommand(query, connection);
@@ -58,6 +58,27 @@ Persist Security Info=False;";
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            ManagerZone man = new ManagerZone();
+            StudentZone stu = new StudentZone();
+            LecturerZone lec = new LecturerZone();
+            this.Hide();
+            string usera = LoginInfo.user;
+            if (usera[0] == 's')
+            {
+                stu.Show();
+            }
+            if (usera[0] == 'l')
+            {
+                lec.Show();
+            }
+            if (usera[0] == 'm')
+            {
+                man.Show();
+            }
         }
     }
 }

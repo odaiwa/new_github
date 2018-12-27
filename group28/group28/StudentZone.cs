@@ -43,6 +43,7 @@ namespace group28
 
         private void button4_Click(object sender, EventArgs e)
         {
+            this.Hide();
             asd1.Show();
         }
 

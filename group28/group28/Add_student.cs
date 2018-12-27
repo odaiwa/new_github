@@ -80,5 +80,12 @@ namespace group28
                     label10.Text = "Username Already Exist!";
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            ManagerZone mm = new ManagerZone();
+            mm.Show();
+        }
     }
 }

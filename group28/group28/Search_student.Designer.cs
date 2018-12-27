@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search_student));
             this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database23DataSet = new group28.Database23DataSet();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,9 +48,11 @@
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label_title = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database23DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // studentBindingSource
@@ -66,7 +69,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Text", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(234, 90);
+            this.label1.Location = new System.Drawing.Point(178, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 29);
             this.label1.TabIndex = 13;
@@ -74,21 +77,24 @@
             // 
             // textB_id
             // 
-            this.textB_id.Location = new System.Drawing.Point(286, 94);
+            this.textB_id.Location = new System.Drawing.Point(230, 96);
             this.textB_id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textB_id.Name = "textB_id";
-            this.textB_id.Size = new System.Drawing.Size(191, 22);
+            this.textB_id.Size = new System.Drawing.Size(201, 22);
             this.textB_id.TabIndex = 12;
             // 
             // btn_search_lec
             // 
-            this.btn_search_lec.Location = new System.Drawing.Point(482, 88);
+            this.btn_search_lec.BackColor = System.Drawing.Color.White;
+            this.btn_search_lec.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_search_lec.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btn_search_lec.Location = new System.Drawing.Point(446, 83);
             this.btn_search_lec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_search_lec.Name = "btn_search_lec";
-            this.btn_search_lec.Size = new System.Drawing.Size(107, 34);
+            this.btn_search_lec.Size = new System.Drawing.Size(117, 38);
             this.btn_search_lec.TabIndex = 11;
             this.btn_search_lec.Text = "Search";
-            this.btn_search_lec.UseVisualStyleBackColor = true;
+            this.btn_search_lec.UseVisualStyleBackColor = false;
             this.btn_search_lec.Click += new System.EventHandler(this.btn_search_lec_Click);
             // 
             // studentTableAdapter
@@ -124,11 +130,11 @@
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9});
             this.studentDataGridView.DataSource = this.studentBindingSource;
-            this.studentDataGridView.Location = new System.Drawing.Point(145, 154);
+            this.studentDataGridView.Location = new System.Drawing.Point(89, 156);
             this.studentDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.studentDataGridView.Name = "studentDataGridView";
             this.studentDataGridView.RowTemplate.Height = 24;
-            this.studentDataGridView.Size = new System.Drawing.Size(543, 338);
+            this.studentDataGridView.Size = new System.Drawing.Size(553, 338);
             this.studentDataGridView.TabIndex = 14;
             // 
             // dataGridViewTextBoxColumn1
@@ -195,17 +201,30 @@
             this.label_title.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.label_title.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_title.ForeColor = System.Drawing.Color.Green;
-            this.label_title.Location = new System.Drawing.Point(277, 18);
+            this.label_title.Location = new System.Drawing.Point(210, 9);
             this.label_title.Name = "label_title";
             this.label_title.Size = new System.Drawing.Size(307, 54);
             this.label_title.TabIndex = 17;
             this.label_title.Text = "Search Student ";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Search_student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(845, 513);
+            this.BackColor = System.Drawing.Color.Beige;
+            this.ClientSize = new System.Drawing.Size(758, 513);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label_title);
             this.Controls.Add(this.studentDataGridView);
             this.Controls.Add(this.label1);
@@ -218,6 +237,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database23DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,5 +263,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.Label label_title;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
