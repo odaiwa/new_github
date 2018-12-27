@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using static group28.Form1;
 
 namespace group28
 {
@@ -26,7 +27,7 @@ Persist Security Info=False;";
             try
             {
                 connection.Open();
-                string byid = textB_byid.Text;
+                string byid = LoginInfo.userid; ;
                 string toid = textB_toid.Text.ToString();
                 string text = richTextB_text.Text.ToString();
                 string query = "INSERT into messages([sender_id],[reciever_id],[Text])VALUES('" + byid + "','" + toid + "','" + text + "')";
@@ -45,6 +46,16 @@ Persist Security Info=False;";
         }
 
         private void manager_send_message_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textB_toid_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

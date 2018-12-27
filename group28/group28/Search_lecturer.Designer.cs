@@ -37,7 +37,6 @@
             this.lecturerTableAdapter = new group28.Database23DataSetTableAdapters.lecturerTableAdapter();
             this.tableAdapterManager = new group28.Database23DataSetTableAdapters.TableAdapterManager();
             this.lecturerDataGridView = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +44,8 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label_title = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.database23DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lecturerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lecturerDataGridView)).BeginInit();
@@ -54,27 +55,26 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Text", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(172, 48);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(221, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 23);
+            this.label1.Size = new System.Drawing.Size(44, 29);
             this.label1.TabIndex = 16;
             this.label1.Text = "ID:";
             // 
             // textB_id_lec
             // 
-            this.textB_id_lec.Location = new System.Drawing.Point(211, 51);
-            this.textB_id_lec.Margin = new System.Windows.Forms.Padding(2);
+            this.textB_id_lec.Location = new System.Drawing.Point(273, 85);
+            this.textB_id_lec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textB_id_lec.Name = "textB_id_lec";
-            this.textB_id_lec.Size = new System.Drawing.Size(144, 20);
+            this.textB_id_lec.Size = new System.Drawing.Size(191, 22);
             this.textB_id_lec.TabIndex = 15;
             // 
             // btn_search_lecc
             // 
-            this.btn_search_lecc.Location = new System.Drawing.Point(358, 46);
-            this.btn_search_lecc.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_search_lecc.Location = new System.Drawing.Point(469, 79);
+            this.btn_search_lecc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_search_lecc.Name = "btn_search_lecc";
-            this.btn_search_lecc.Size = new System.Drawing.Size(80, 28);
+            this.btn_search_lecc.Size = new System.Drawing.Size(107, 34);
             this.btn_search_lecc.TabIndex = 14;
             this.btn_search_lecc.Text = "Search";
             this.btn_search_lecc.UseVisualStyleBackColor = true;
@@ -121,23 +121,13 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
             this.lecturerDataGridView.DataSource = this.lecturerBindingSource;
-            this.lecturerDataGridView.Location = new System.Drawing.Point(9, 78);
-            this.lecturerDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.lecturerDataGridView.Location = new System.Drawing.Point(121, 132);
+            this.lecturerDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lecturerDataGridView.Name = "lecturerDataGridView";
             this.lecturerDataGridView.RowTemplate.Height = 24;
-            this.lecturerDataGridView.Size = new System.Drawing.Size(557, 280);
+            this.lecturerDataGridView.Size = new System.Drawing.Size(543, 345);
             this.lecturerDataGridView.TabIndex = 17;
             this.lecturerDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.lecturerDataGridView_CellContentClick);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(513, 365);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -184,17 +174,41 @@
             this.dataGridViewTextBoxColumn7.HeaderText = "Course Name";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(684, 449);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label_title
+            // 
+            this.label_title.AutoSize = true;
+            this.label_title.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.label_title.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_title.ForeColor = System.Drawing.Color.Green;
+            this.label_title.Location = new System.Drawing.Point(232, 9);
+            this.label_title.Name = "label_title";
+            this.label_title.Size = new System.Drawing.Size(303, 54);
+            this.label_title.TabIndex = 19;
+            this.label_title.Text = "Search Lecturer";
+            // 
             // Search_lecturer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 400);
+            this.ClientSize = new System.Drawing.Size(800, 492);
+            this.Controls.Add(this.label_title);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lecturerDataGridView);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textB_id_lec);
             this.Controls.Add(this.btn_search_lecc);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Search_lecturer";
             this.Text = "Search_lecturer";
             this.Load += new System.EventHandler(this.Search_lecturer_Load);
@@ -224,5 +238,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.Label label_title;
     }
 }

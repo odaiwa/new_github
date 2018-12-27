@@ -41,5 +41,10 @@ Persist Security Info=False;";
         {
             this.Hide();
         }
+
+        private void EmailUpdate_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

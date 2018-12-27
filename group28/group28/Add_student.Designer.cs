@@ -64,6 +64,7 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label_title = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.database23DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
@@ -92,11 +93,11 @@
             this.groupBox1.Controls.Add(this.textBox_un);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBox_ID);
-            this.groupBox1.Location = new System.Drawing.Point(25, 20);
+            this.groupBox1.Location = new System.Drawing.Point(27, 69);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(381, 478);
+            this.groupBox1.Size = new System.Drawing.Size(400, 489);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add_Student";
@@ -136,14 +137,16 @@
             // 
             // button_add
             // 
+            this.button_add.BackColor = System.Drawing.Color.Lime;
             this.button_add.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_add.Location = new System.Drawing.Point(300, 441);
+            this.button_add.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_add.Location = new System.Drawing.Point(283, 438);
             this.button_add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_add.Name = "button_add";
-            this.button_add.Size = new System.Drawing.Size(75, 23);
+            this.button_add.Size = new System.Drawing.Size(110, 47);
             this.button_add.TabIndex = 5;
             this.button_add.Text = "Add";
-            this.button_add.UseVisualStyleBackColor = true;
+            this.button_add.UseVisualStyleBackColor = false;
             this.button_add.Click += new System.EventHandler(this.button_add_Click);
             // 
             // dateTimePicker1
@@ -328,10 +331,10 @@
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9});
             this.studentDataGridView.DataSource = this.studentBindingSource;
-            this.studentDataGridView.Location = new System.Drawing.Point(507, 76);
+            this.studentDataGridView.Location = new System.Drawing.Point(454, 140);
             this.studentDataGridView.Name = "studentDataGridView";
             this.studentDataGridView.RowTemplate.Height = 24;
-            this.studentDataGridView.Size = new System.Drawing.Size(713, 350);
+            this.studentDataGridView.Size = new System.Drawing.Size(898, 370);
             this.studentDataGridView.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn1
@@ -388,11 +391,25 @@
             this.dataGridViewTextBoxColumn9.HeaderText = "departmentName";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
+            // label_title
+            // 
+            this.label_title.AutoSize = true;
+            this.label_title.BackColor = System.Drawing.Color.Khaki;
+            this.label_title.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_title.ForeColor = System.Drawing.Color.Green;
+            this.label_title.Location = new System.Drawing.Point(637, 9);
+            this.label_title.Name = "label_title";
+            this.label_title.Size = new System.Drawing.Size(250, 54);
+            this.label_title.TabIndex = 19;
+            this.label_title.Text = "Add Student";
+            // 
             // Add_student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1232, 523);
+            this.BackColor = System.Drawing.Color.FloralWhite;
+            this.ClientSize = new System.Drawing.Size(1364, 569);
+            this.Controls.Add(this.label_title);
             this.Controls.Add(this.studentDataGridView);
             this.Controls.Add(this.groupBox1);
             this.Name = "Add_student";
@@ -404,6 +421,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentDataGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -444,5 +462,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label_title;
     }
 }
