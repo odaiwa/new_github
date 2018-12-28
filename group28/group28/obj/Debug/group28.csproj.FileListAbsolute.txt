@@ -185,3 +185,4 @@ D:\New folder\group28\group28\obj\Debug\group28.csproj.CoreCompileInputs.cache
 D:\New folder\group28\group28\obj\Debug\group28.exe
 D:\New folder\group28\group28\obj\Debug\group28.pdb
 D:\New folder\group28\group28\obj\Debug\group28.csprojAssemblyReference.cache
+C:\Users\mtzat\Desktop\sadasdasdas\new_github\group28\group28\obj\Debug\group28.schedule_lecturer.resources

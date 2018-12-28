@@ -86,7 +86,7 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.Ivory;
-            this.button8.Font = new System.Drawing.Font("Baskerville Old Face", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Font = new System.Drawing.Font("Baskerville Old Face", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.Green;
             this.button8.ImageKey = "(none)";
             this.button8.Location = new System.Drawing.Point(420, 164);
@@ -94,7 +94,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(203, 64);
             this.button8.TabIndex = 7;
-            this.button8.Text = "Send Request To Manager";
+            this.button8.Text = "Update Course Class";
             this.button8.UseVisualStyleBackColor = false;
             // 
             // button1
@@ -165,7 +165,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(223, 64);
             this.button5.TabIndex = 4;
-            this.button5.Text = "Send Message To Student";
+            this.button5.Text = "Send Message ";
             this.button5.UseVisualStyleBackColor = false;
             // 
             // label_title

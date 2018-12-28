@@ -27,7 +27,7 @@ Persist Security Info=False;";
 
         private void button1_Click(object sender, EventArgs e)
         {
-            sda = new OleDbDataAdapter("SELECT Name,day,Hour,lecturerName FROM Course,student,student_course WHERE student_course.StudentID='"+ LoginInfo.userid + "' AND Course.Number=student_course.Course_Number", connection);
+            sda = new OleDbDataAdapter("SELECT Name,day,Hour,lecturerName,Class FROM Course,student,student_course WHERE student_course.StudentID='"+ LoginInfo.userid + "' AND Course.Number=student_course.Course_Number", connection);
             dt = new DataTable();
             sda.Fill(dt);
             dataGridView1.DataSource = dt;
