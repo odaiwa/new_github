@@ -28,12 +28,5 @@ namespace group28
             this.Hide();
             asd3.Show();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Hide();
-            schedule_lecturer sl = new schedule_lecturer();
-            sl.Show();
-        }
     }
 }

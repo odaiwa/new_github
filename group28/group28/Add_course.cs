@@ -45,30 +45,24 @@ namespace group28
             string hour= string.Format(textB_hour.Text);
             string points = string.Format(textB_points.Text);
             int count = 0;
-            int count2 = 0;
             if (num == "" || name == "" || lec_id == "" || lec_name == "" || day == "" || hour == "" || points == "") { MessageBox.Show("you must enter all information about course"); }
             for (int rows = 0; rows < (courseDataGridView.Rows.Count) - 1; rows++)
             {
                 {
                     string value = courseDataGridView.Rows[rows].Cells[0].Value.ToString();
-                    string lecid = courseDataGridView.Rows[rows].Cells[2].Value.ToString();
                     if (num == value)
                         count++;
-                    if (lecid == lec_id)
-                        count2++;
                 }
             }
-            if (count == 0 && count2 != 0)
-            {
+            if (count == 0) {
                 database23DataSet.Course.AddCourseRow(textB_num.Text, textB_name.Text, textB_lecid.Text, textB_lecname.Text, textB_day.Text, textB_hour.Text, int.Parse(textB_points.Text));
                 CTA.Update(database23DataSet);
                 tableAdapterManager.UpdateAll(database23DataSet);
                 MessageBox.Show("Success!");
             }
-            else if (count != 0)
+            else
                 MessageBox.Show("The Course Already Exist!");
-            else if (count2 == 0)
-                MessageBox.Show("This4  lecturer is not Exsit!");
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
