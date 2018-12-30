@@ -28,5 +28,12 @@ namespace group28
             this.Hide();
             asd3.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            lec_schedule llc = new lec_schedule();
+            llc.Show();
+        }
     }
 }

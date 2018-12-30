@@ -50,8 +50,6 @@ Persist Security Info=False;";
                     k++;
                 }
             }
-            //dt.Rows[0][0] = "Classs";
-            //dataGridView1.DataSource = dt;
             dataGridView1.Columns[4].HeaderText = "Class";
             dataGridView1.Refresh();
         }
