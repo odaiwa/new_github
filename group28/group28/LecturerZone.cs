@@ -35,5 +35,21 @@ namespace group28
             lec_schedule llc = new lec_schedule();
             llc.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Hide();
+            students_in_course sts = new students_in_course();
+            sts.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

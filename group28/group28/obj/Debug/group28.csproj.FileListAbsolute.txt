@@ -161,3 +161,4 @@ C:\Users\mtzat\Desktop\ddd\new_github\group28\group28\obj\Debug\group28.csproj.C
 C:\Users\mtzat\Desktop\ddd\new_github\group28\group28\obj\Debug\group28.exe
 C:\Users\mtzat\Desktop\ddd\new_github\group28\group28\obj\Debug\group28.pdb
 C:\Users\mtzat\Desktop\ddd\new_github\group28\group28\obj\Debug\group28.lec_schedule.resources
+C:\Users\mtzat\Desktop\ddd\new_github\group28\group28\obj\Debug\group28.students_in_course.resources

@@ -82,6 +82,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Search Course";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button8
             // 
@@ -153,6 +154,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "View Students In My Course";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -167,6 +169,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Send Message";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label_title
             // 

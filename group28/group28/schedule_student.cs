@@ -16,7 +16,6 @@ namespace group28
     {
         private OleDbConnection connection = new OleDbConnection();
         private OleDbDataAdapter sda;
-        //private OleDbCommandBuilder scb;
         DataTable dt;
 
         public schedule_student()
@@ -38,26 +37,6 @@ Persist Security Info=False;";
             //dataGridView1.DataBindings();
             dataGridView1.Columns[4].HeaderText = "Class";
             dataGridView1.Refresh();
-            //for (int i = 0; i < dataGridView1.Rows.Count; i++)
-            //{
-            //    int k = 0;
-            //    for (int j = 0; j < (dataGridView1.Rows.Count) - 1; j++)
-            //    {
-            //        string v1 = dataGridView1.Rows[i].Cells["Name"].Value.ToString();
-            //        string v2 = dataGridView1.Rows[j].Cells["Name"].Value.ToString();
-            //        if (v1 == v2)
-            //        {
-            //            if (k != 0)
-            //            {
-            //                dt.Rows.RemoveAt(j);
-            //                dataGridView1.DataSource = dt;
-            //            }
-            //        }
-            //        k++;
-            //    }
-            //}
-            //dataGridView1.Columns[4].HeaderText = "Class";
-            //dataGridView1.Refresh();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

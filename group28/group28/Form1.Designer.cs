@@ -84,10 +84,10 @@
             this.Login_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Login_button.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Login_button.Location = new System.Drawing.Point(289, 129);
+            this.Login_button.Location = new System.Drawing.Point(255, 129);
             this.Login_button.Margin = new System.Windows.Forms.Padding(4);
             this.Login_button.Name = "Login_button";
-            this.Login_button.Size = new System.Drawing.Size(89, 40);
+            this.Login_button.Size = new System.Drawing.Size(123, 40);
             this.Login_button.TabIndex = 12;
             this.Login_button.Text = "LOGIN";
             this.Login_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

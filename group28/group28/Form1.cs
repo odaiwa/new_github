@@ -31,6 +31,7 @@ Persist Security Info=False;";
         {
             public static string userid;
             public static string user;
+            public static string firstname;
         }
         private void Login_button_Click(object sender, EventArgs e)
         {
@@ -54,6 +55,7 @@ Persist Security Info=False;";
                 while (reader.Read())
                 {
                     LoginInfo.userid = reader["ID"].ToString();
+
                     count++;
                 }
                 if (count == 1)
@@ -110,6 +112,7 @@ Persist Security Info=False;";
                 while (reader.Read())
                 {
                     LoginInfo.userid = reader["ID"].ToString();
+                    LoginInfo.firstname = reader["firstName"].ToString();
                     count++;
                 }
                 if (count == 1)

@@ -131,6 +131,12 @@
     <Compile Include="Search_student.Designer.cs">
       <DependentUpon>Search_student.cs</DependentUpon>
     </Compile>
+    <Compile Include="students_in_course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="students_in_course.Designer.cs">
+      <DependentUpon>students_in_course.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentZone.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Search_student.resx">
       <DependentUpon>Search_student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="students_in_course.resx">
+      <DependentUpon>students_in_course.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentZone.resx">
       <DependentUpon>StudentZone.cs</DependentUpon>
