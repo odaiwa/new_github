@@ -33,9 +33,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Login_button = new System.Windows.Forms.Button();
             this.username_text = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.password_text = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.stuzone = new System.Windows.Forms.Button();
             this.manzone = new System.Windows.Forms.Button();
             this.leczone = new System.Windows.Forms.Button();
@@ -61,7 +61,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(395, 198);
+            this.groupBox1.Size = new System.Drawing.Size(395, 179);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login";
@@ -80,15 +80,14 @@
             // Login_button
             // 
             this.Login_button.BackColor = System.Drawing.Color.FloralWhite;
-            this.Login_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Login_button.BackgroundImage")));
             this.Login_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Login_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Login_button.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Login_button.Location = new System.Drawing.Point(237, 132);
-            this.Login_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Login_button.Location = new System.Drawing.Point(289, 129);
+            this.Login_button.Margin = new System.Windows.Forms.Padding(4);
             this.Login_button.Name = "Login_button";
-            this.Login_button.Size = new System.Drawing.Size(123, 49);
+            this.Login_button.Size = new System.Drawing.Size(89, 40);
             this.Login_button.TabIndex = 12;
             this.Login_button.Text = "LOGIN";
             this.Login_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -98,25 +97,15 @@
             // username_text
             // 
             this.username_text.Location = new System.Drawing.Point(133, 39);
-            this.username_text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.username_text.Margin = new System.Windows.Forms.Padding(4);
             this.username_text.Name = "username_text";
             this.username_text.Size = new System.Drawing.Size(227, 22);
             this.username_text.TabIndex = 9;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(642, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // password_text
             // 
             this.password_text.Location = new System.Drawing.Point(133, 74);
-            this.password_text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.password_text.Margin = new System.Windows.Forms.Padding(4);
             this.password_text.Name = "password_text";
             this.password_text.PasswordChar = '•';
             this.password_text.Size = new System.Drawing.Size(227, 22);
@@ -133,6 +122,16 @@
             this.label2.Size = new System.Drawing.Size(104, 22);
             this.label2.TabIndex = 10;
             this.label2.Text = "Username:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(642, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // stuzone
             // 
@@ -219,7 +218,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(75, 95);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(192, 198);
+            this.pictureBox3.Size = new System.Drawing.Size(192, 179);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 21;
             this.pictureBox3.TabStop = false;
@@ -229,7 +228,7 @@
             this.button1.BackColor = System.Drawing.Color.Ivory;
             this.button1.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(548, 318);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 46);
             this.button1.TabIndex = 23;

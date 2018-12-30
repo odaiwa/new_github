@@ -37,7 +37,6 @@ namespace group28
             string num = string.Format(textB_num.Text);
             string day = string.Format(textB_day.Text);
             string hour = string.Format(textB_hour.Text);
-            //int count = 0;
             for (int rows = 0; rows < (courseDataGridView.Rows.Count) - 1; rows++)
             {
                 string value = courseDataGridView.Rows[rows].Cells[0].Value.ToString();

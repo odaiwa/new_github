@@ -38,6 +38,8 @@
             this.courseTableAdapter = new group28.Database23DataSetTableAdapters.CourseTableAdapter();
             this.tableAdapterManager = new group28.Database23DataSetTableAdapters.TableAdapterManager();
             this.courseDataGridView = new System.Windows.Forms.DataGridView();
+            this.label_title = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,8 +47,6 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label_title = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.database23DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseDataGridView)).BeginInit();
@@ -132,6 +132,29 @@
             this.courseDataGridView.Size = new System.Drawing.Size(744, 319);
             this.courseDataGridView.TabIndex = 17;
             // 
+            // label_title
+            // 
+            this.label_title.AutoSize = true;
+            this.label_title.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.label_title.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_title.ForeColor = System.Drawing.Color.Green;
+            this.label_title.Location = new System.Drawing.Point(292, 9);
+            this.label_title.Name = "label_title";
+            this.label_title.Size = new System.Drawing.Size(280, 54);
+            this.label_title.TabIndex = 20;
+            this.label_title.Text = "Search Course";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Number";
@@ -147,7 +170,7 @@
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "lec_id";
-            this.dataGridViewTextBoxColumn3.HeaderText = "lec_id";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Class";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // dataGridViewTextBoxColumn4
@@ -173,29 +196,6 @@
             this.dataGridViewTextBoxColumn7.DataPropertyName = "points";
             this.dataGridViewTextBoxColumn7.HeaderText = "points";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // label_title
-            // 
-            this.label_title.AutoSize = true;
-            this.label_title.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.label_title.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_title.ForeColor = System.Drawing.Color.Green;
-            this.label_title.Location = new System.Drawing.Point(292, 9);
-            this.label_title.Name = "label_title";
-            this.label_title.Size = new System.Drawing.Size(280, 54);
-            this.label_title.TabIndex = 20;
-            this.label_title.Text = "Search Course";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Search_course
             // 
@@ -231,6 +231,8 @@
         private Database23DataSetTableAdapters.CourseTableAdapter courseTableAdapter;
         private Database23DataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.DataGridView courseDataGridView;
+        private System.Windows.Forms.Label label_title;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -238,7 +240,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.Label label_title;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

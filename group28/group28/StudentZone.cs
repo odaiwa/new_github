@@ -56,5 +56,12 @@ namespace group28
         {
 
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Hide();
+            View_Messages vm = new View_Messages();
+            vm.Show();
+        }
     }
 }
