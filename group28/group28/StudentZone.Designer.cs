@@ -209,7 +209,7 @@
             this.button2.Font = new System.Drawing.Font("Baskerville Old Face", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Green;
             this.button2.ImageKey = "(none)";
-            this.button2.Location = new System.Drawing.Point(411, 50);
+            this.button2.Location = new System.Drawing.Point(410, 50);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(211, 62);
@@ -231,6 +231,7 @@
             this.button8.TabIndex = 7;
             this.button8.Text = "Add Course To My Schedule";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // sch_stu
             // 
@@ -275,11 +276,12 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Delete Course To My Schedule";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Ivory;
-            this.button6.Font = new System.Drawing.Font("Baskerville Old Face", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Baskerville Old Face", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Green;
             this.button6.ImageKey = "(none)";
             this.button6.Location = new System.Drawing.Point(84, 274);
@@ -287,8 +289,9 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(221, 58);
             this.button6.TabIndex = 5;
-            this.button6.Text = "Send Requet To Manager";
+            this.button6.Text = "Send Request";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button4
             // 

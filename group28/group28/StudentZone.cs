@@ -25,12 +25,14 @@ namespace group28
 
         private void sch_stu_Click(object sender, EventArgs e)
         {
+            Hide();
             schedule_student ss = new schedule_student();
             ss.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Hide();
             asd.Show();
         }
 
@@ -49,6 +51,7 @@ namespace group28
 
         private void button9_Click(object sender, EventArgs e)
         {
+            Hide();
             asd2.Show();
         }
 
@@ -62,6 +65,22 @@ namespace group28
             Hide();
             View_Messages vm = new View_Messages();
             vm.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Hide();
+            manager_send_message mm = new manager_send_message();
+            mm.Show();
         }
     }
 }

@@ -45,9 +45,33 @@ namespace group28
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Hide();
+            Search_course sc = new Search_course();
+            sc.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
+        {
+            Hide();
+            manager_send_message mm = new manager_send_message();
+            mm.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Hide();
+            View_Messages vm = new View_Messages();
+            vm.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Add_course ad = new Add_course();
+            ad.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
         {
 
         }
