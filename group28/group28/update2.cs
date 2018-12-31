@@ -38,25 +38,32 @@ namespace group28
             string day = string.Format(textB_day.Text);
             string hour = string.Format(textB_hour.Text);
             int count = 0;
-            for (int rows = 0; rows < (courseDataGridView.Rows.Count) - 1; rows++)
+            int count2 = 0;
+            if (num == "" || day == "" || hour == "") { MessageBox.Show("you must insert all information"); }
+            else
             {
-                string clas = courseDataGridView.Rows[rows].Cells[2].Value.ToString();
-                string value = courseDataGridView.Rows[rows].Cells[0].Value.ToString();
-                if (num == value)
+                for (int rows = 0; rows < (courseDataGridView.Rows.Count) - 1; rows++)
                 {
-                    for (int i = 0; i < (courseDataGridView.Rows.Count) - 1; i++)
+                    string clas = courseDataGridView.Rows[rows].Cells[2].Value.ToString();
+                    string value = courseDataGridView.Rows[rows].Cells[0].Value.ToString();
+                    if (num == value)
                     {
-                        if (courseDataGridView.Rows[i].Cells[2].Value.ToString() == clas && courseDataGridView.Rows[i].Cells[4].Value.ToString() == day && courseDataGridView.Rows[i].Cells[5].Value.ToString() == hour)
-                            count++;
+                        count2++;
+                        for (int i = 0; i < (courseDataGridView.Rows.Count) - 1; i++)
+                        {
+                            if (courseDataGridView.Rows[i].Cells[2].Value.ToString() == clas && courseDataGridView.Rows[i].Cells[4].Value.ToString() == day && courseDataGridView.Rows[i].Cells[5].Value.ToString() == hour)
+                                count++;
+                        }
+                        if (count == 0)
+                        {
+                            courseDataGridView.Rows[rows].Cells[4].Value = day;
+                            courseDataGridView.Rows[rows].Cells[5].Value = hour;
+                        }
+                        else
+                            MessageBox.Show("You can't update because time conflicts with another course at same day,hour and class ");
                     }
-                    if (count == 0)
-                    {
-                        courseDataGridView.Rows[rows].Cells[4].Value = day;
-                        courseDataGridView.Rows[rows].Cells[5].Value = hour;
-                    }
-                    else
-                        MessageBox.Show("You can't update because time conflicts with another course at same day,hour and class ");
                 }
+                if (count2 == 0) { MessageBox.Show("Number of course is incorrect"); }
             }
             this.Validate();
             this.courseBindingSource.EndEdit();
