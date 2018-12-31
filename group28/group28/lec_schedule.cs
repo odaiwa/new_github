@@ -39,5 +39,12 @@ Persist Security Info=False;";
             dataGridView1.Columns[3].HeaderText = "Class";
             dataGridView1.Refresh();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            LecturerZone l = new LecturerZone();
+            l.Show();
+        }
     }
 }

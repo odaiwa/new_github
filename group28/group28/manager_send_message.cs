@@ -24,28 +24,32 @@ Persist Security Info=False;";
 
         private void btn_send_Click(object sender, EventArgs e)
         {
-            try
+            string text = richTextB_text.Text.ToString();
+            string toid = textB_toid.Text.ToString();
+            string byid = LoginInfo.userid;
+            if (text == "" || toid == "") { MessageBox.Show("you must enter a id you want to send for him and the text message"); }
+            else
             {
-                connection.Open();
-                string toid = textB_toid.Text.ToString();
-                string byid = LoginInfo.userid;
-                string text = richTextB_text.Text.ToString();
-                string query = "INSERT into messages([sender_id],[reciever_id],[Text])VALUES('" + byid + "','" + toid + "','" + text + "')";
-                OleDbCommand command = new OleDbCommand(query, connection);
-                command.ExecuteNonQuery();
-                MessageBox.Show("Data saved!");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error " + ex.Message);
-            }
-            finally
-            {
-                connection.Close();
+                try
+                {
+                    connection.Open();
+                    string query = "INSERT into messages([sender_id],[reciever_id],[Text])VALUES('" + byid + "','" + toid + "','" + text + "')";
+                    OleDbCommand command = new OleDbCommand(query, connection);
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Message Sended (-_-)");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error " + ex.Message);
+                }
+                finally
+                {
+                    connection.Close();
+                }
             }
         }
 
-        private void manager_send_message_Load(object sender, EventArgs e)
+            private void manager_send_message_Load(object sender, EventArgs e)
         {
 
         }
