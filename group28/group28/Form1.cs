@@ -182,5 +182,21 @@ Persist Security Info=False;";
         {
             Application.Exit();
         }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
+
+        private void aboutApplicationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This Application is for registration process for courses in an academic institution,Also,Let Users (Student,Manager,Lecturer) perform many tasks in a simple way", "About Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void aboutDeveloperToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This Application is Developed by Yazan,Moataz,Odai,Tarek students at Sami Shamoon College of Engineering ", "About Developer",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+        }
     }
 }
