@@ -48,5 +48,12 @@ namespace group28
             this.courseBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.database23DataSet);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            LecturerZone l = new LecturerZone();
+            l.Show();
+        }
     }
 }

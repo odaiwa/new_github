@@ -39,17 +39,28 @@ namespace group28
             string hour = string.Format(textB_hour.Text);
             for (int rows = 0; rows < (courseDataGridView.Rows.Count) - 1; rows++)
             {
+                string clas = courseDataGridView.Rows[rows].Cells[2].Value.ToString();
                 string value = courseDataGridView.Rows[rows].Cells[0].Value.ToString();
                 if (num == value)
                 {
-                    courseDataGridView.Rows[rows].Cells[4].Value = day;
-                    courseDataGridView.Rows[rows].Cells[5].Value = hour;
+                    for (int i = 0; i < (courseDataGridView.Rows.Count) - 1; i++)
+                    {
+                        if (courseDataGridView.Rows[i].Cells[2].Value.ToString() == clas && courseDataGridView.Rows[i].Cells[4].Value.ToString() == day && courseDataGridView.Rows[i].Cells[5].Value.ToString() == hour)
+                        {
+                            MessageBox.Show("erorr");
+                        }
+                        else
+                        {
+                            courseDataGridView.Rows[rows].Cells[4].Value = day;
+                            courseDataGridView.Rows[rows].Cells[5].Value = hour;
+                        }
+                    }
                 }
-            }
-            this.Validate();
-            this.courseBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.database23DataSet);
+                this.Validate();
+                this.courseBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.database23DataSet);
 
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
