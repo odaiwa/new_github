@@ -198,5 +198,10 @@ Persist Security Info=False;";
             MessageBox.Show("This Application is Developed by Yazan,Moataz,Odai,Tarek students at Sami Shamoon College of Engineering ", "About Developer",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

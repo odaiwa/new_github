@@ -73,7 +73,9 @@ namespace group28
 
         private void button8_Click(object sender, EventArgs e)
         {
-
+            Hide();
+            upclass uu = new upclass();
+            uu.Show();
         }
     }
 }

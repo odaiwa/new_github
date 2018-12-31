@@ -41,10 +41,10 @@
             this.courseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.courseTableAdapter = new group28.Database23DataSetTableAdapters.CourseTableAdapter();
             this.tableAdapterManager = new group28.Database23DataSetTableAdapters.TableAdapterManager();
-            this.courseDataGridView = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label_title = new System.Windows.Forms.Label();
+            this.courseDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,9 +54,9 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.database23DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.courseDataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.courseDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // textB_day
@@ -152,25 +152,6 @@
             this.tableAdapterManager.studentTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = group28.Database23DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // courseDataGridView
-            // 
-            this.courseDataGridView.AutoGenerateColumns = false;
-            this.courseDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.courseDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7});
-            this.courseDataGridView.DataSource = this.courseBindingSource;
-            this.courseDataGridView.Location = new System.Drawing.Point(377, 121);
-            this.courseDataGridView.Name = "courseDataGridView";
-            this.courseDataGridView.RowTemplate.Height = 24;
-            this.courseDataGridView.Size = new System.Drawing.Size(743, 305);
-            this.courseDataGridView.TabIndex = 32;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.textB_day);
@@ -204,11 +185,30 @@
             this.label_title.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.label_title.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_title.ForeColor = System.Drawing.Color.Green;
-            this.label_title.Location = new System.Drawing.Point(520, 12);
+            this.label_title.Location = new System.Drawing.Point(457, 8);
             this.label_title.Name = "label_title";
-            this.label_title.Size = new System.Drawing.Size(291, 54);
+            this.label_title.Size = new System.Drawing.Size(390, 54);
             this.label_title.TabIndex = 35;
-            this.label_title.Text = "Update Course";
+            this.label_title.Text = "Update Course Time";
+            // 
+            // courseDataGridView
+            // 
+            this.courseDataGridView.AutoGenerateColumns = false;
+            this.courseDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.courseDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7});
+            this.courseDataGridView.DataSource = this.courseBindingSource;
+            this.courseDataGridView.Location = new System.Drawing.Point(342, 92);
+            this.courseDataGridView.Name = "courseDataGridView";
+            this.courseDataGridView.RowTemplate.Height = 24;
+            this.courseDataGridView.Size = new System.Drawing.Size(746, 357);
+            this.courseDataGridView.TabIndex = 35;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -258,19 +258,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(1170, 450);
+            this.Controls.Add(this.courseDataGridView);
             this.Controls.Add(this.label_title);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.courseDataGridView);
             this.Name = "update2";
             this.Text = "update2";
             this.Load += new System.EventHandler(this.update2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database23DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.courseDataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.courseDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,10 +289,10 @@
         private System.Windows.Forms.BindingSource courseBindingSource;
         private Database23DataSetTableAdapters.CourseTableAdapter courseTableAdapter;
         private Database23DataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.DataGridView courseDataGridView;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label_title;
+        private System.Windows.Forms.DataGridView courseDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;

@@ -87,7 +87,7 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.Ivory;
-            this.button8.Font = new System.Drawing.Font("Baskerville Old Face", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Font = new System.Drawing.Font("Baskerville Old Face", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.Green;
             this.button8.ImageKey = "(none)";
             this.button8.Location = new System.Drawing.Point(420, 164);
@@ -132,7 +132,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Ivory;
-            this.button3.Font = new System.Drawing.Font("Baskerville Old Face", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Baskerville Old Face", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Green;
             this.button3.ImageKey = "(none)";
             this.button3.Location = new System.Drawing.Point(735, 164);

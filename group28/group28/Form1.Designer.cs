@@ -64,7 +64,7 @@
             this.groupBox1.Controls.Add(this.username_text);
             this.groupBox1.Controls.Add(this.password_text);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(356, 178);
+            this.groupBox1.Location = new System.Drawing.Point(314, 129);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -90,14 +90,14 @@
             this.Login_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Login_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Login_button.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Login_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Login_button.Location = new System.Drawing.Point(255, 129);
+            this.Login_button.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Login_button.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Login_button.Location = new System.Drawing.Point(248, 125);
             this.Login_button.Margin = new System.Windows.Forms.Padding(4);
             this.Login_button.Name = "Login_button";
-            this.Login_button.Size = new System.Drawing.Size(123, 40);
+            this.Login_button.Size = new System.Drawing.Size(130, 44);
             this.Login_button.TabIndex = 12;
             this.Login_button.Text = "LOGIN";
-            this.Login_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Login_button.UseVisualStyleBackColor = false;
             this.Login_button.Click += new System.EventHandler(this.Login_button_Click);
             // 
@@ -133,7 +133,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(705, 102);
+            this.label1.Location = new System.Drawing.Point(663, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 17);
             this.label1.TabIndex = 14;
@@ -146,7 +146,7 @@
             this.stuzone.Font = new System.Drawing.Font("Baskerville Old Face", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stuzone.ForeColor = System.Drawing.Color.Green;
             this.stuzone.ImageKey = "(none)";
-            this.stuzone.Location = new System.Drawing.Point(87, 410);
+            this.stuzone.Location = new System.Drawing.Point(87, 343);
             this.stuzone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stuzone.Name = "stuzone";
             this.stuzone.Size = new System.Drawing.Size(137, 37);
@@ -161,7 +161,7 @@
             this.manzone.Font = new System.Drawing.Font("Baskerville Old Face", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manzone.ForeColor = System.Drawing.Color.Green;
             this.manzone.ImageKey = "(none)";
-            this.manzone.Location = new System.Drawing.Point(372, 410);
+            this.manzone.Location = new System.Drawing.Point(372, 343);
             this.manzone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.manzone.Name = "manzone";
             this.manzone.Size = new System.Drawing.Size(137, 37);
@@ -176,7 +176,7 @@
             this.leczone.Font = new System.Drawing.Font("Baskerville Old Face", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.leczone.ForeColor = System.Drawing.Color.Green;
             this.leczone.ImageKey = "(none)";
-            this.leczone.Location = new System.Drawing.Point(229, 410);
+            this.leczone.Location = new System.Drawing.Point(229, 343);
             this.leczone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.leczone.Name = "leczone";
             this.leczone.Size = new System.Drawing.Size(137, 37);
@@ -191,7 +191,7 @@
             this.label_title.BackColor = System.Drawing.Color.Khaki;
             this.label_title.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_title.ForeColor = System.Drawing.Color.Green;
-            this.label_title.Location = new System.Drawing.Point(363, 92);
+            this.label_title.Location = new System.Drawing.Point(321, 43);
             this.label_title.Name = "label_title";
             this.label_title.Size = new System.Drawing.Size(188, 54);
             this.label_title.TabIndex = 18;
@@ -200,7 +200,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(556, 92);
+            this.pictureBox1.Location = new System.Drawing.Point(514, 43);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(59, 54);
@@ -211,7 +211,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(298, 92);
+            this.pictureBox2.Location = new System.Drawing.Point(256, 43);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(59, 54);
@@ -222,7 +222,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(138, 178);
+            this.pictureBox3.Location = new System.Drawing.Point(96, 129);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(192, 179);
@@ -234,7 +234,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Ivory;
             this.button1.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(611, 401);
+            this.button1.Location = new System.Drawing.Point(569, 352);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 46);
@@ -251,7 +251,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(969, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(773, 28);
             this.menuStrip1.TabIndex = 24;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -291,6 +291,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -298,7 +299,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(969, 525);
+            this.ClientSize = new System.Drawing.Size(773, 435);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);

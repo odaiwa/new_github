@@ -143,6 +143,12 @@
     <Compile Include="StudentZone.Designer.cs">
       <DependentUpon>StudentZone.cs</DependentUpon>
     </Compile>
+    <Compile Include="upclass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="upclass.Designer.cs">
+      <DependentUpon>upclass.cs</DependentUpon>
+    </Compile>
     <Compile Include="update2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentZone.resx">
       <DependentUpon>StudentZone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="upclass.resx">
+      <DependentUpon>upclass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="update2.resx">
       <DependentUpon>update2.cs</DependentUpon>
