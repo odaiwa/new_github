@@ -163,3 +163,4 @@ C:\Users\mtzat\Desktop\ddd\new_github\group28\group28\obj\Debug\group28.pdb
 C:\Users\mtzat\Desktop\ddd\new_github\group28\group28\obj\Debug\group28.lec_schedule.resources
 C:\Users\mtzat\Desktop\ddd\new_github\group28\group28\obj\Debug\group28.students_in_course.resources
 C:\Users\mtzat\Desktop\ddd\new_github\group28\group28\obj\Debug\group28.upclass.resources
+C:\Users\mtzat\Desktop\ddd\new_github\group28\group28\obj\Debug\group28.Reset_password.resources

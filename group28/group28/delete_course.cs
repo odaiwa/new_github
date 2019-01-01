@@ -23,16 +23,39 @@ Persist Security Info=False;";
 
         private void button1_Click(object sender, EventArgs e)
         {
-            connection.Open();
             string id = textB_num.Text.ToString();
-            OleDbCommand command = new OleDbCommand("DELETE FROM [Course] WHERE Number=?", connection);
+            if (id == "") { MessageBox.Show("you must insert a course number"); }
+            else
             {
-                command.Parameters.AddWithValue("Number", id);
-                command.ExecuteNonQuery();
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                command.CommandText = "select * from Course where Number='" + id + "'";
+                OleDbDataReader reader = command.ExecuteReader();
+                int count = 0;
+                while (reader.Read())
+                {
+                    count++;
+                }
+                if (count == 1)
+                {
+                    command = new OleDbCommand("DELETE FROM [Course] WHERE Number=?", connection);
+                    {
+                        command.Parameters.AddWithValue("Number", id);
+                        command.ExecuteNonQuery();
+                    }
+                    MessageBox.Show("The Course Deleted", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                if (count > 1)
+                {
+                    MessageBox.Show("Duplicate");
+                }
+                if (count < 1)
+                {
+                    MessageBox.Show("Incorrect");
+                }
+                connection.Close();
             }
-
-            MessageBox.Show("Data Deleted", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            connection.Close();
         }
 
         private void courseBindingNavigatorSaveItem_Click(object sender, EventArgs e)

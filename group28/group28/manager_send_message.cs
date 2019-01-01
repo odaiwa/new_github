@@ -28,7 +28,7 @@ Persist Security Info=False;";
             string toid = textB_toid.Text.ToString();
             string byid = LoginInfo.userid;
             if (text == "" || toid == "") { MessageBox.Show("you must enter a id you want to send for him and the text message"); }
-            else
+            else 
             {
                 try
                 {

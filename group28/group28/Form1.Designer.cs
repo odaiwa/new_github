@@ -30,15 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.Login_button = new System.Windows.Forms.Button();
             this.username_text = new System.Windows.Forms.TextBox();
             this.password_text = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.stuzone = new System.Windows.Forms.Button();
-            this.manzone = new System.Windows.Forms.Button();
-            this.leczone = new System.Windows.Forms.Button();
             this.label_title = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -46,10 +44,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutApplicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutDeveloperToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -59,19 +59,35 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.linkLabel1);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.Login_button);
             this.groupBox1.Controls.Add(this.username_text);
             this.groupBox1.Controls.Add(this.password_text);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(314, 129);
+            this.groupBox1.Location = new System.Drawing.Point(267, 121);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(395, 179);
+            this.groupBox1.Size = new System.Drawing.Size(420, 210);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.White;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Khaki;
+            this.linkLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.linkLabel1.Location = new System.Drawing.Point(234, 111);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(122, 17);
+            this.linkLabel1.TabIndex = 13;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Forgot Password?";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label3
             // 
@@ -86,13 +102,13 @@
             // 
             // Login_button
             // 
-            this.Login_button.BackColor = System.Drawing.Color.FloralWhite;
+            this.Login_button.BackColor = System.Drawing.Color.Green;
             this.Login_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Login_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Login_button.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Login_button.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Login_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Login_button.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Login_button.Location = new System.Drawing.Point(248, 125);
+            this.Login_button.Location = new System.Drawing.Point(283, 160);
             this.Login_button.Margin = new System.Windows.Forms.Padding(4);
             this.Login_button.Name = "Login_button";
             this.Login_button.Size = new System.Drawing.Size(130, 44);
@@ -133,57 +149,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(663, 53);
+            this.label1.Location = new System.Drawing.Point(368, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 17);
             this.label1.TabIndex = 14;
             this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // stuzone
-            // 
-            this.stuzone.BackColor = System.Drawing.Color.Ivory;
-            this.stuzone.Font = new System.Drawing.Font("Baskerville Old Face", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stuzone.ForeColor = System.Drawing.Color.Green;
-            this.stuzone.ImageKey = "(none)";
-            this.stuzone.Location = new System.Drawing.Point(87, 343);
-            this.stuzone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.stuzone.Name = "stuzone";
-            this.stuzone.Size = new System.Drawing.Size(137, 37);
-            this.stuzone.TabIndex = 17;
-            this.stuzone.Text = "Student Zone";
-            this.stuzone.UseVisualStyleBackColor = false;
-            this.stuzone.Click += new System.EventHandler(this.stuzone_Click);
-            // 
-            // manzone
-            // 
-            this.manzone.BackColor = System.Drawing.Color.Ivory;
-            this.manzone.Font = new System.Drawing.Font("Baskerville Old Face", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manzone.ForeColor = System.Drawing.Color.Green;
-            this.manzone.ImageKey = "(none)";
-            this.manzone.Location = new System.Drawing.Point(372, 343);
-            this.manzone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.manzone.Name = "manzone";
-            this.manzone.Size = new System.Drawing.Size(137, 37);
-            this.manzone.TabIndex = 16;
-            this.manzone.Text = "Manager Zone";
-            this.manzone.UseVisualStyleBackColor = false;
-            this.manzone.Click += new System.EventHandler(this.manzone_Click);
-            // 
-            // leczone
-            // 
-            this.leczone.BackColor = System.Drawing.Color.Ivory;
-            this.leczone.Font = new System.Drawing.Font("Baskerville Old Face", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.leczone.ForeColor = System.Drawing.Color.Green;
-            this.leczone.ImageKey = "(none)";
-            this.leczone.Location = new System.Drawing.Point(229, 343);
-            this.leczone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.leczone.Name = "leczone";
-            this.leczone.Size = new System.Drawing.Size(137, 37);
-            this.leczone.TabIndex = 15;
-            this.leczone.Text = "Lecturer Zone";
-            this.leczone.UseVisualStyleBackColor = false;
-            this.leczone.Click += new System.EventHandler(this.leczone_Click);
             // 
             // label_title
             // 
@@ -191,7 +162,7 @@
             this.label_title.BackColor = System.Drawing.Color.Khaki;
             this.label_title.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_title.ForeColor = System.Drawing.Color.Green;
-            this.label_title.Location = new System.Drawing.Point(321, 43);
+            this.label_title.Location = new System.Drawing.Point(288, 28);
             this.label_title.Name = "label_title";
             this.label_title.Size = new System.Drawing.Size(188, 54);
             this.label_title.TabIndex = 18;
@@ -200,7 +171,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(514, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(481, 28);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(59, 54);
@@ -211,7 +182,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(256, 43);
+            this.pictureBox2.Location = new System.Drawing.Point(223, 28);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(59, 54);
@@ -222,22 +193,23 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(96, 129);
+            this.pictureBox3.Location = new System.Drawing.Point(49, 121);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(192, 179);
+            this.pictureBox3.Size = new System.Drawing.Size(192, 204);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 21;
             this.pictureBox3.TabStop = false;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Ivory;
+            this.button1.BackColor = System.Drawing.Color.OrangeRed;
             this.button1.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(569, 352);
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(690, 366);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 46);
+            this.button1.Size = new System.Drawing.Size(111, 46);
             this.button1.TabIndex = 23;
             this.button1.Text = "Exit";
             this.button1.UseVisualStyleBackColor = false;
@@ -251,7 +223,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(773, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(818, 28);
             this.menuStrip1.TabIndex = 24;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -262,6 +234,13 @@
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
             this.fileToolStripMenuItem.Text = "File";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(108, 26);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -275,23 +254,41 @@
             // aboutApplicationToolStripMenuItem
             // 
             this.aboutApplicationToolStripMenuItem.Name = "aboutApplicationToolStripMenuItem";
-            this.aboutApplicationToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.aboutApplicationToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
             this.aboutApplicationToolStripMenuItem.Text = "About Application ";
             this.aboutApplicationToolStripMenuItem.Click += new System.EventHandler(this.aboutApplicationToolStripMenuItem_Click);
             // 
             // aboutDeveloperToolStripMenuItem
             // 
             this.aboutDeveloperToolStripMenuItem.Name = "aboutDeveloperToolStripMenuItem";
-            this.aboutDeveloperToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.aboutDeveloperToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
             this.aboutDeveloperToolStripMenuItem.Text = "About Developer";
             this.aboutDeveloperToolStripMenuItem.Click += new System.EventHandler(this.aboutDeveloperToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem
+            // label4
             // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Khaki;
+            this.label4.Font = new System.Drawing.Font("Urdu Typesetting", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Green;
+            this.label4.Location = new System.Drawing.Point(12, 28);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 44);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "00:00:00";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Khaki;
+            this.label5.Font = new System.Drawing.Font("Urdu Typesetting", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Green;
+            this.label5.Location = new System.Drawing.Point(671, 28);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 44);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "Date";
             // 
             // Form1
             // 
@@ -299,16 +296,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(773, 435);
+            this.ClientSize = new System.Drawing.Size(818, 425);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label_title);
-            this.Controls.Add(this.stuzone);
-            this.Controls.Add(this.manzone);
-            this.Controls.Add(this.leczone);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -337,9 +332,6 @@
         private System.Windows.Forms.TextBox username_text;
         private System.Windows.Forms.TextBox password_text;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button stuzone;
-        private System.Windows.Forms.Button manzone;
-        private System.Windows.Forms.Button leczone;
         private System.Windows.Forms.Label label_title;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -352,6 +344,9 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutApplicationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutDeveloperToolStripMenuItem;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 

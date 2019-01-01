@@ -15,7 +15,7 @@ namespace group28
     {
 
         public OleDbConnection connection = new OleDbConnection();
-
+        Timer t = new Timer();
         public Form1()
         {
             InitializeComponent();
@@ -25,6 +25,38 @@ Persist Security Info=False;";
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            t.Interval = 1000;
+            t.Tick += new EventHandler(this.t_Tick);
+            t.Start();
+            label5.Text = DateTime.Now.ToShortDateString();
+        }
+        private void t_Tick(object sender,EventArgs e)
+        {
+            int hh = DateTime.Now.Hour;
+            int mm = DateTime.Now.Minute;
+            int ss = DateTime.Now.Second;
+            string time = "";
+            if (hh < 10)
+            {
+                time += "0" + hh;
+            }
+            else
+                time += hh;
+            time += ":";
+            if (mm < 10)
+            {
+                time += "0" + mm;
+            }
+            else
+                time += mm;
+            time += ":";
+            if (ss < 10)
+            {
+                time += "0" + ss;
+            }
+            else
+                time += ss;
+            label4.Text = time;
 
         }
         public static class LoginInfo
@@ -55,7 +87,6 @@ Persist Security Info=False;";
                 while (reader.Read())
                 {
                     LoginInfo.userid = reader["ID"].ToString();
-
                     count++;
                 }
                 if (count == 1)
@@ -202,6 +233,18 @@ Persist Security Info=False;";
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Hide();
+            Reset_password rr = new Reset_password();
+            rr.Show();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
