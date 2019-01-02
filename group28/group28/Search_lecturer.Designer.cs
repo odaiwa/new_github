@@ -57,7 +57,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Text", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(181, 81);
+            this.label1.Location = new System.Drawing.Point(326, 84);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 29);
             this.label1.TabIndex = 16;
@@ -65,7 +65,7 @@
             // 
             // textB_id_lec
             // 
-            this.textB_id_lec.Location = new System.Drawing.Point(233, 85);
+            this.textB_id_lec.Location = new System.Drawing.Point(378, 88);
             this.textB_id_lec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textB_id_lec.Name = "textB_id_lec";
             this.textB_id_lec.Size = new System.Drawing.Size(191, 22);
@@ -76,7 +76,7 @@
             this.btn_search_lecc.BackColor = System.Drawing.Color.White;
             this.btn_search_lecc.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_search_lecc.ForeColor = System.Drawing.Color.Navy;
-            this.btn_search_lecc.Location = new System.Drawing.Point(429, 79);
+            this.btn_search_lecc.Location = new System.Drawing.Point(574, 82);
             this.btn_search_lecc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_search_lecc.Name = "btn_search_lecc";
             this.btn_search_lecc.Size = new System.Drawing.Size(107, 34);
@@ -130,7 +130,7 @@
             this.lecturerDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lecturerDataGridView.Name = "lecturerDataGridView";
             this.lecturerDataGridView.RowTemplate.Height = 24;
-            this.lecturerDataGridView.Size = new System.Drawing.Size(543, 345);
+            this.lecturerDataGridView.Size = new System.Drawing.Size(876, 345);
             this.lecturerDataGridView.TabIndex = 17;
             this.lecturerDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.lecturerDataGridView_CellContentClick);
             // 
@@ -185,7 +185,7 @@
             this.label_title.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.label_title.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_title.ForeColor = System.Drawing.Color.Green;
-            this.label_title.Location = new System.Drawing.Point(192, 9);
+            this.label_title.Location = new System.Drawing.Point(345, 13);
             this.label_title.Name = "label_title";
             this.label_title.Size = new System.Drawing.Size(303, 54);
             this.label_title.TabIndex = 19;
@@ -207,7 +207,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(738, 492);
+            this.ClientSize = new System.Drawing.Size(999, 492);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label_title);
             this.Controls.Add(this.lecturerDataGridView);

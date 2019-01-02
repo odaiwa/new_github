@@ -8,14 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static group28.Form1;
+using System.Data.OleDb;
 
 namespace group28
 {
     public partial class Search_lecturer : Form
     {
+        public OleDbConnection connection = new OleDbConnection();
         public Search_lecturer()
         {
             InitializeComponent();
+            connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\Database23.mdb;
+Persist Security Info=False;";
         }
 
         private void lecturerBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -23,7 +27,6 @@ namespace group28
             this.Validate();
             this.lecturerBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.database23DataSet);
-
         }
 
         private void Search_lecturer_Load(object sender, EventArgs e)
@@ -36,17 +39,38 @@ namespace group28
         private void btn_search_lecc_Click(object sender, EventArgs e)
         {
             string id = string.Format(textB_id_lec.Text);
-
             if (id == "")
             {
                 MessageBox.Show("You Must Insert an id lecturer!");
             }
             else
             {
-                DataView dv = new DataView();
-                dv.Table = database23DataSet.Tables[2];
-                dv.RowFilter = "ID  = " + textB_id_lec.Text;
-                lecturerDataGridView.DataSource = dv;
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                command.CommandText = "select * from lecturer where ID= '" + id + "'";
+                OleDbDataReader reader = command.ExecuteReader();
+                int count = 0;
+                while (reader.Read())
+                {
+                    count++;
+                }
+                if (count == 1)
+                {
+                    DataView dv = new DataView();
+                    dv.Table = database23DataSet.Tables[2];
+                    dv.RowFilter = "ID  = " + textB_id_lec.Text;
+                    lecturerDataGridView.DataSource = dv;
+                }
+                if (count > 1)
+                {
+                    MessageBox.Show("Duplicate");
+                }
+                if (count < 1)
+                {
+                    MessageBox.Show("Incorrect");
+                }
+                connection.Close();
             }
         }
 

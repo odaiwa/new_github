@@ -69,7 +69,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Text", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(178, 92);
+            this.label1.Location = new System.Drawing.Point(346, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 29);
             this.label1.TabIndex = 13;
@@ -77,7 +77,7 @@
             // 
             // textB_id
             // 
-            this.textB_id.Location = new System.Drawing.Point(230, 96);
+            this.textB_id.Location = new System.Drawing.Point(398, 96);
             this.textB_id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textB_id.Name = "textB_id";
             this.textB_id.Size = new System.Drawing.Size(201, 22);
@@ -88,7 +88,7 @@
             this.btn_search_lec.BackColor = System.Drawing.Color.White;
             this.btn_search_lec.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_search_lec.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btn_search_lec.Location = new System.Drawing.Point(446, 83);
+            this.btn_search_lec.Location = new System.Drawing.Point(614, 83);
             this.btn_search_lec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_search_lec.Name = "btn_search_lec";
             this.btn_search_lec.Size = new System.Drawing.Size(117, 38);
@@ -134,7 +134,7 @@
             this.studentDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.studentDataGridView.Name = "studentDataGridView";
             this.studentDataGridView.RowTemplate.Height = 24;
-            this.studentDataGridView.Size = new System.Drawing.Size(553, 338);
+            this.studentDataGridView.Size = new System.Drawing.Size(880, 338);
             this.studentDataGridView.TabIndex = 14;
             // 
             // dataGridViewTextBoxColumn1
@@ -201,7 +201,7 @@
             this.label_title.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.label_title.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_title.ForeColor = System.Drawing.Color.Green;
-            this.label_title.Location = new System.Drawing.Point(210, 9);
+            this.label_title.Location = new System.Drawing.Point(378, 9);
             this.label_title.Name = "label_title";
             this.label_title.Size = new System.Drawing.Size(307, 54);
             this.label_title.TabIndex = 17;
@@ -223,7 +223,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(758, 513);
+            this.ClientSize = new System.Drawing.Size(1039, 513);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label_title);
             this.Controls.Add(this.studentDataGridView);

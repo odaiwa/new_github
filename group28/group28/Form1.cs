@@ -161,7 +161,6 @@ Persist Security Info=False;";
                 }
 
                 connection.Close();
-
             }
             else
             {
@@ -171,16 +170,16 @@ Persist Security Info=False;";
 
         private void label1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                connection.Open();
-                label1.Text = "connected";
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error" + ex);
-            }
+            //try
+            //{
+            //    connection.Open();
+            //    label1.Text = "connected";
+            //    connection.Close();
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Error" + ex);
+            //}
         }
 
         private void manzone_Click(object sender, EventArgs e)
@@ -245,6 +244,10 @@ Persist Security Info=False;";
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void username_text_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

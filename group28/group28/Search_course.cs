@@ -8,14 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static group28.Form1;
+using System.Data.OleDb;
 
 namespace group28
 {
     public partial class Search_course : Form
     {
+        public OleDbConnection connection = new OleDbConnection();
         public Search_course()
         {
             InitializeComponent();
+            connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\Database23.mdb;
+Persist Security Info=False;";
         }
 
         private void courseBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -36,17 +40,38 @@ namespace group28
         private void btn_search_crs_Click(object sender, EventArgs e)
         {
             string id = string.Format(textB_id_crs.Text);
-
             if (id == "")
             {
                 MessageBox.Show("You Must Insert a Number Course!");
             }
             else
             {
-                DataView dv = new DataView();
-                dv.Table = database23DataSet.Tables[0];
-                dv.RowFilter = "Number  = " + textB_id_crs.Text;
-                courseDataGridView.DataSource = dv;
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                command.CommandText = "select * from Course where Number= '" + id + "'";
+                OleDbDataReader reader = command.ExecuteReader();
+                int count = 0;
+                while (reader.Read())
+                {
+                    count++;
+                }
+                if (count == 1)
+                {
+                    DataView dv = new DataView();
+                    dv.Table = database23DataSet.Tables[0];
+                    dv.RowFilter = "Number  = " + textB_id_crs.Text;
+                    courseDataGridView.DataSource = dv;
+                }
+                if (count > 1)
+                {
+                    MessageBox.Show("Duplicate");
+                }
+                if (count < 1)
+                {
+                    MessageBox.Show("Incorrect");
+                }
+                connection.Close();
             }
         }
 
