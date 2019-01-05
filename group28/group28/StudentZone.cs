@@ -40,7 +40,7 @@ namespace group28
         {
             this.Hide();
             asd3.Show();
-            
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -69,9 +69,13 @@ namespace group28
 
         private void button8_Click(object sender, EventArgs e)
         {
+            AddCourseStu asd123 = new AddCourseStu();
+
+                  this.Hide();
+                   asd123.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+    private void button3_Click(object sender, EventArgs e)
         {
 
         }
