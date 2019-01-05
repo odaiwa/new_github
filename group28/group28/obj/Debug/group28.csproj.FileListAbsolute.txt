@@ -192,3 +192,30 @@ C:\Users\tarek\Desktop\new_github-20190102T101220Z-001\new_github\group28\group2
 C:\Users\tarek\Desktop\new_github-20190102T101220Z-001\new_github\group28\group28\obj\Debug\group28.csproj.CoreCompileInputs.cache
 C:\Users\tarek\Desktop\new_github-20190102T101220Z-001\new_github\group28\group28\obj\Debug\group28.exe
 C:\Users\tarek\Desktop\new_github-20190102T101220Z-001\new_github\group28\group28\obj\Debug\group28.pdb
+D:\Git's\vrs 2\new_github\group28\group28\bin\Debug\group28.exe.config
+D:\Git's\vrs 2\new_github\group28\group28\bin\Debug\group28.exe
+D:\Git's\vrs 2\new_github\group28\group28\bin\Debug\group28.pdb
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.csprojResolveAssemblyReference.cache
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.Add_course.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.Add_student.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.delete_course.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.EmailUpdate.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.Form1.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.LecturerZone.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.lec_schedule.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.ManagerZone.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.manager_send_message.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.Properties.Resources.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.Reset_password.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.schedule_student.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.Search_course.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.Search_lecturer.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.Search_student.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.students_in_course.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.StudentZone.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.upclass.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.update2.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.View_Messages.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.csproj.GenerateResource.Cache
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.exe
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.pdb

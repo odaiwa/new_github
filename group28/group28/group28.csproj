@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCourseStu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCourseStu.Designer.cs">
+      <DependentUpon>AddCourseStu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add_course.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     <Compile Include="View_Messages.Designer.cs">
       <DependentUpon>View_Messages.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddCourseStu.resx">
+      <DependentUpon>AddCourseStu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Add_course.resx">
       <DependentUpon>Add_course.cs</DependentUpon>
     </EmbeddedResource>
