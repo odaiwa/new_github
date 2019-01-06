@@ -60,9 +60,9 @@ Persist Security Info=False;";
             {
                 conn.Open();
                 string count = comboBox1.SelectedValue.ToString();
-                MessageBox.Show(count);
+                string aaa = "1";
                 string username1 = LoginInfo.userid;
-                String my_querry = "INSERT INTO student_course(Course_Number,StudentID)VALUES('" + count + "','" + username1 + "')";
+                String my_querry = "INSERT INTO student_course(Course_Number,StudentID,exsit)VALUES('" + count + "','" + username1 + "','"+aaa+"')";
                 OleDbCommand cmd = new OleDbCommand(my_querry, conn);
                 cmd.ExecuteNonQuery();
                 String my_querry1 = "INSERT INTO StudentInCourse(id_student,num_course)VALUES('" + username1 + "','" + count + "')";

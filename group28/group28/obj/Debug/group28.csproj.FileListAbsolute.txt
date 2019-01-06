@@ -220,3 +220,4 @@ D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.csproj.GenerateResou
 D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.exe
 D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.pdb
 D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.AddCourseStu.resources
+D:\Git's\vrs 2\new_github\group28\group28\obj\Debug\group28.DeleteCourseStu.resources

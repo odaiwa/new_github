@@ -25,6 +25,7 @@ Persist Security Info=False;";
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            username_text.Focus();
             t.Interval = 1000;
             t.Tick += new EventHandler(this.t_Tick);
             t.Start();
@@ -248,6 +249,11 @@ Persist Security Info=False;";
 
         private void username_text_TextChanged(object sender, EventArgs e)
         {
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

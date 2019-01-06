@@ -69,6 +69,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Database23DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DeleteCourseStu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteCourseStu.Designer.cs">
+      <DependentUpon>DeleteCourseStu.cs</DependentUpon>
+    </Compile>
     <Compile Include="delete_course.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Add_student.resx">
       <DependentUpon>Add_student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteCourseStu.resx">
+      <DependentUpon>DeleteCourseStu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="delete_course.resx">
       <DependentUpon>delete_course.cs</DependentUpon>

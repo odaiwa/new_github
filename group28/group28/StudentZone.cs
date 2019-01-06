@@ -77,7 +77,9 @@ namespace group28
 
     private void button3_Click(object sender, EventArgs e)
         {
-
+            Hide();
+            DeleteCourseStu asd = new DeleteCourseStu();
+            asd.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
