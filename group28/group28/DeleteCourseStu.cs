@@ -82,6 +82,8 @@ Persist Security Info=False;";
             connection.Open();
             OleDbCommand cmd = new OleDbCommand("DELETE FROM student_course WHERE Course_Number = '" + id + "'AND StudentID = '"+username1+"'", connection);
             cmd.ExecuteNonQuery();
+            OleDbCommand cmd1 = new OleDbCommand("DELETE FROM StudentInCourse WHERE num_course = '" + id + "'AND id_student = '" + username1 + "'", connection);
+            cmd1.ExecuteNonQuery();
             MessageBox.Show("Data Deleted", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
             connection.Close();
         }
